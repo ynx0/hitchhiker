@@ -872,7 +872,7 @@ function setup(loader, resources) {
     highScoreText.position.set(app.screen.width + -(app.screen.width * 0.5), app.screen.height + -(app.screen.height * 0.1));    // todo convert to offsets
 
     healthText.anchor.set(0.5, 0.5);
-    healthText.position.set(app.screen.width + -(app.screen.width * 0.85), app.screen.height + -(app.screen.height * 0.95));
+    healthText.position.set(app.screen.width + -(app.screen.width * 0.8), app.screen.height + -(app.screen.height * 0.95));
     let updateHealthText = function (tick) {
         debounce(tick, 2, () => {
             healthText.text = "HEALTH: " + player.health;
@@ -942,6 +942,9 @@ function setup(loader, resources) {
     function initialState() {
         tick++;
         bg.tilePosition.x += -bg_static;
+        healthText.visible = false;
+        backBtn.visible = false;
+        // console.log("first state");
         if (started) {
             splashText.visible = false;
             highScoreText.visible = false;

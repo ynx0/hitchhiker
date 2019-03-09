@@ -1,5 +1,5 @@
 # hitchhiker
-A game for Hitchhiker's Guide to the Galaxy visit http://yaseen.xyz to play the game
+A game for Hitchhiker's Guide to the Galaxy visit http://hh.yaseen.xyz to play the game
 
 
 
